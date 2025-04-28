@@ -1,0 +1,7 @@
+/venv/
+/static/
+.history/
+/.vscode/
+/.idea/
+/PHPStorm/
+pages/__pycache__/

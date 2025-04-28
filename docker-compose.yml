@@ -1,0 +1,26 @@
+name: olympica_technut_local
+services:
+
+  web:
+    image: satyaprahlad/olympica_website:latest     #You can also name your image here.
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - ./env/.env
+    volumes:
+      - ./static:/app/static
+      - ./media:/app/media  # Add this line for media files
+      - ./env/:/app/env
+
+    networks:
+      - app-network
+    ports:
+      - "8013:8000"  # Map port 8000 on the host to port 8000 on the container
+
+networks:
+  app-network:
+
+volumes:
+  media_volume:  # Declare the media volume here
+

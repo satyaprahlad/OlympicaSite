@@ -1,0 +1,11 @@
+/venv/
+*.log
+
+!logs
+/static
+/postgres/backups/*
+!/postgres/backups
+/media/*
+!/media/.gitignore
+/env
+.env
