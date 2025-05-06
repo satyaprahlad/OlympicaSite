@@ -1,0 +1,37 @@
+:root{
+    --main-color-one:#2a3586;
+}
+
+header .logo{
+    width:275px;
+}
+
+.offcanvas__top img{
+    max-width:250px!important;
+}
+
+.bg-light1{
+    background:var(--main-color-one)!important;    
+}
+
+.service-section .sec-subtitle, .service-section .sec-title, .service-section .service__text p, .intro-area .sec-title{
+    color:#ffffff!important;
+}
+
+.intro-section ul.listitems li{
+    color:#ffffff!important;
+}
+
+.single-intro-inner .details .icon-box{
+    background:var(--main-color-one)!important;    
+}
+
+.textslider_2 h2{
+    color:var(--main-color-one)!important;
+}
+
+.footer__address li span{
+    color:#ffffff;
+}
+
+

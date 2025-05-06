@@ -13,8 +13,8 @@
         top: 47px;
       }
     }
-  }
-
+  }  
+ 
   &__inner {
     display: grid;
     grid-gap: 30px;
@@ -63,8 +63,11 @@
         gap: 20px;
         grid-template-columns: auto 115px;
       }
-    }
+    }    
   }
+
+  
+
 
   &__right {
     &-4 {

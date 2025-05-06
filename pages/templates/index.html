@@ -6,106 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="HTML5 Template">
         <!-- Site Title -->
-        <title>Bizzpro - Digital Corporate Business Creative Html Template</title>
+        <title>Olympica - Digital Corporate Business</title>
         <!-- Site Favicon -->
-        <link rel="icon" type="image/x-icon" href="static/imgs/icon/favicon.png">
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <!-- All CSS Files -->
-        <link rel="stylesheet" href="static/css/all.min.css">
-        <link rel="stylesheet" href="static/css/bootstrap.min.css">
-        <link rel="stylesheet" href="static/css/meanmenu.min.css">
-        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
-        <link rel="stylesheet" href="static/css/magnific-popup.css">
-        <link rel="stylesheet" href="static/css/aos.css">
-        <link rel="stylesheet" href="static/css/progressbar.css">
-        <link rel="stylesheet" href="static/css/master.css">
+        {% include "css_files_list.html" %}
     </head>
     <body>
         {% include "header.html" %}
         <div id="smooth-wrapper">
-            <div id="smooth-content">
-                <!-- Header area start -->
-                <header class="header__area pos-abs plr-100">
-                    <div class="header__inner">
-                        <div class="header__logo">
-                            <a href="index.html"><img src="static/imgs/logo/logo.png" alt="Site Logo"></a>
-                        </div>
-                        <div class="header__menu">
-                            <nav class="main-menu">
-                                <ul>
-                                    <li class="has-dropdown">
-                                        <a href="#">Home</a>
-                                        <ul class="main-dropdown">
-                                            <li>
-                                                <a href="index.html">Home 01</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-2.html">Home 02</a>
-                                            </li>
-                                            <li>
-                                                <a href="index-3.html">Home 03</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about.html">About</a>
-                                    </li>
-                                    <li class="has-dropdown">
-                                        <a href="#">Service</a>
-                                        <ul class="main-dropdown">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-details.html">Service details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-megamenu"><a href="#">pages</a>
-                                        <ul class="main-dropdown">
-                                            <li><a href="project.html">portfolio</a></li>
-                                            <li><a href="project-details.html">portfolio details</a></li>
-                                            <li><a href="team.html">team</a></li>
-                                            <li><a href="team-details.html">team details</a></li>
-                                            <li><a href="faq.html">faq</a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li class="has-dropdown"><a href="#">blog</a>
-                                        <ul class="main-dropdown">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-details.html">blog details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html">Contact</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header__others">
-                            <div class="header__search">
-                                <button class="search-icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </button>
-                                <button class="search-close">
-                                    <i class="fa-solid fa-xmark"></i>
-                                </button>
-                            </div>
-                            <div class="header__offcanvas">
-                                <button class="menu_icon bg-base">
-                                    <img src="static/imgs/icon/menu.png" alt="Menu Icon">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-                <div class="search__form">
-                    <form action="#">
-                        <input type="text" name="s" placeholder="Search...">
-                    </form>
-                </div>
-                <!-- Header area end -->
+            <div id="smooth-content">               
                 <main>
                     <!-- Hero area start -->
                     <section class="hero__area_1" style="background-image: url('static/imgs/hero/00.png');">
@@ -129,7 +37,7 @@
                     <!-- Hero area end -->
 
                     <!-- Service area start -->
-                    <section class="service__area pt-150 pb-130">
+                    <section class="service__area pt-150 pb-130 service-section">
                         <div class="container">
                             <div class="bg-light1 border-radius-25 pt-120 px-lg-5 px-4 pb-90 pb-120">
                                 <div class="row pb-120">
@@ -279,7 +187,7 @@
                     <!-- Counter area end -->
 
                     <!-- intro area start -->
-                    <div class="intro-area bg-light1 pt-150">
+                    <div class="intro-area bg-light1 pt-150 intro-section">
                         <div class="container pb-130">
                             <div class="pt-0 mb-5" data-aos="fade-up" data-aos-delay="500">
                                 <h2 class="sec-subtitle">Our Intro <span>Our Intro</span>
@@ -349,23 +257,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="exp-area" style="background-image: url('static/imgs/intro/9.png');">
+                        <div class="exp-area " style="background-image: url('static/imgs/intro/9.png');">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="pt-5 pb-5 about__content pt-0" data-aos="fade-up" data-aos-delay="500">
                                             <h3 class="sec-title heading-animation">Experience the power of transformation</h3>
-                                            <p class="border-bottom-1-black mb-lg-5 mb-4 pb-lg-5 pb-4">There are many variations of passages of Lorem Ipsum available  ours but the majority have suffered alteration in some form, by injected humour or randomised words which don look even the design here us</p>
+                                            <p class="border-bottom-1-black mb-lg-5 mb-4 pb-lg-5 pb-4 text-white">There are many variations of passages of Lorem Ipsum available  ours but the majority have suffered alteration in some form, by injected humour or randomised words which don look even the design here us</p>
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <ul>
+                                                    <ul class="listitems">
                                                         <li class="pb-3">Be positive but realistic designer </li>
                                                         <li class="pb-3">Know  your target market </li>
                                                         <li class="pb-3">Simplify your processes creative </li>
                                                    </ul>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <ul>
+                                                    <ul class="listitems">
                                                         <li class="pb-3">How to improve your busines</li>
                                                         <li class="pb-3">making this the first true</li>
                                                         <li class="pb-3">Creative this the first true</li>
@@ -602,26 +510,7 @@
                     </section>
                     <!-- Who we are area end -->
 
-                    <!-- Newsletter area start -->
-                    <section class="newsletter__area bg-light1 pt-120 pb-120">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-xxl-5 col-xl-5 col-lg-5 align-self-center">
-                                    <h2 class="sec-subtitle">Newsletter <span>Newsletter</span></h2>
-                                    <h3 class="sec-title heading-animation pb-0">Want to Be a Member?</h3>
-                                </div>
-                                <div class="col-xxl-7 col-xl-7 col-lg-7">
-                                    <div class="newsletter__right ps-xxl-5">
-                                        <form action="#" class="ps-xxl-5">
-                                            <input class="border-radius-50" type="email" name="email" placeholder="Enter Your Email">
-                                            <button type="submit" class="submit btn-rollover border-radius-50 border-radius-50-hover bg-base">Subscribe Now</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- Newsletter area end -->
+                 
 
                     <!-- Blog area start -->
                     <section class="blog__area pt-150 pb-150">
@@ -726,20 +615,6 @@
                
             </div>
         </div>
-        <!-- All JS Files -->
-        <script src="static/js/jquery-3.6.1.min.js"></script>
-        <script src="static/js/bootstrap.bundle.min.js"></script>
-        <script src="static/js/jquery.meanmenu.min.js"></script>
-        <script src="static/js/swiper-bundle.min.js"></script>
-        <script src="static/js/jquery.magnific-popup.min.js"></script>
-        <script src="static/js/counter.js"></script>
-        <script src="static/js/progressbar.js"></script>
-        <script src="static/js/aos.js"></script>
-        <script src="static/js/gsap.min.js"></script>
-        <script src="static/js/SplitText.min.js"></script>
-        <script src="static/js/ScrollSmoother.min.js"></script>
-        <script src="static/js/ScrollTrigger.min.js"></script>
-        <script src="static/js/vanilla-tilt.min.js"></script>
-        <script src="static/js/main.js"></script>
+        {% include "js_files_list.html" %}
     </body>
 </html>
