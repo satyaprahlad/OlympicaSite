@@ -9,3 +9,5 @@ pages/__pycache__/
 app/__pycache__
 passenger_wsgi.py
 __pycache__
+app/olympicasite.code-workspace
+__pycache__
