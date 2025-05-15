@@ -8,3 +8,6 @@ pages/__pycache__/
 .env
 app/__pycache__
 passenger_wsgi.py
+/.venv
+__pycache__
+app/OlympicaSite.code-workspace
