@@ -12,6 +12,7 @@ services:
       - ./static:/app/static
       - ./media:/app/media  # Add this line for media files
       - ./env/:/app/env
+      - ./db.sqlite3:/app/db.sqlite3  # Mount SQLite database for persistence
 
     networks:
       - app-network
