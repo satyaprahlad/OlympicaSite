@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Olympica - Professional IT Solutions & Digital Services">
+
+  <!-- Site Title -->
+  <title>Company Profile - Olympica</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../css/all.min.css">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="../css/aos.css">
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+  <!-- Mean Menu CSS -->
+  <link rel="stylesheet" href="../css/meanmenu.min.css">
+  <!-- Swiper Bundle CSS -->
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <!-- Progress Bar CSS -->
+  <link rel="stylesheet" href="../css/progressbar.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/custom.css">
+  <!-- Master CSS -->
+  <link rel="stylesheet" href="../css/master.css">
+
+  <style>
+    /* Additional custom styles for company profile */
+    .company-profile-section {
+      padding: 80px 0;
+    }
+    
+    .profile-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .profile-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+    
+    .profile-header p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .feature-box {
+      background: #f8f9fa;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-box:hover {
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transform: translateY(-5px);
+    }
+    
+    .feature-box h4 {
+      color: #1a1a2e;
+      font-weight: 600;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    .feature-box p {
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+    
+    .counter-item {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border-radius: 10px;
+      color: white;
+      margin-bottom: 30px;
+    }
+    
+    .counter-item h3 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .counter-item p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+    
+    .team-card {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .team-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .team-card h4 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #1a1a2e;
+      font-weight: 600;
+    }
+    
+    .team-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .cta-section {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 80px 0;
+      border-radius: 15px;
+      color: white;
+      text-align: center;
+    }
+    
+    .cta-section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    
+    .cta-section p {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+    
+    .btn-primary {
+      background-color: #ffffff;
+      color: #667eea;
+      padding: 15px 40px;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+    
+    .content-section {
+      margin-bottom: 60px;
+    }
+    
+    .two-col-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    
+    .two-col-layout.reverse {
+      direction: rtl;
+    }
+    
+    .two-col-layout.reverse > * {
+      direction: ltr;
+    }
+    
+    .section-image {
+      width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    
+    .section-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    @media (max-width: 768px) {
+      .two-col-layout {
+        grid-template-columns: 1fr;
+      }
+      
+      .profile-header h2,
+      .section-title,
+      .cta-section h2 {
+        font-size: 1.8rem;
+      }
+      
+      .counter-item h3 {
+        font-size: 2.5rem;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header-area">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="../imgs/logo/logo.png" alt="Olympica Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="company-profile.html">Company Profile</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumb Section -->
+    <section class="breadcrumb__area" style="padding: 40px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Company Profile</h1>
+            <nav style="font-size: 0.95rem;">
+              <a href="index.html" style="color: rgba(255,255,255,0.8); text-decoration: none;">Home</a>
+              <span style="margin: 0 10px;">→</span>
+              <span>Company Profile</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="company-profile-section">
+      <div class="container">
+        <div class="content-section">
+          <div class="two-col-layout">
+            <div>
+              <h2 class="section-title">About Olympica</h2>
+              <p style="font-size: 1.05rem; line-height: 1.8; color: #555; margin-bottom: 20px;">
+                Olympica is a leading IT solutions and digital services company dedicated to transforming businesses through innovative technology. With a passion for excellence and a commitment to delivering measurable results, we partner with organizations of all sizes to drive digital transformation, enhance operational efficiency, and unlock new growth opportunities.
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 15px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">✓ Pioneering Solutions</strong><br>
+                  Digital solutions that empower businesses to compete and thrive in the modern marketplace.
+                </li>
+                <li style="margin-bottom: 15px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">✓ Committed to Excellence</strong><br>
+                  Delivering excellence through innovative technology and strategic partnerships.
+                </li>
+                <li style="margin-bottom: 15px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">✓ Trusted Partner</strong><br>
+                  Your trusted partner for sustainable growth and digital success.
+                </li>
+              </ul>
+            </div>
+            <div class="section-image">
+              <img src="static/imgs/about/about-1.jpg" alt="Company">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="company-profile-section" style="background: #f8f9fa;">
+      <div class="container">
+        <div class="content-section">
+          <div class="two-col-layout reverse">
+            <div class="section-image">
+              <img src="static/imgs/service/details/7.jpg" alt="Mission & Vision">
+            </div>
+            <div>
+              <h2 class="section-title">Our Mission & Vision</h2>
+              <div style="margin-bottom: 30px;">
+                <h4 style="font-size: 1.2rem; color: #1a1a2e; margin-bottom: 10px; font-weight: 600;">Mission</h4>
+                <p style="color: #555; line-height: 1.8;">
+                  To empower businesses with cutting-edge technology solutions that drive innovation, enhance productivity, and accelerate growth in the digital economy.
+                </p>
+              </div>
+              <div style="margin-bottom: 30px;">
+                <h4 style="font-size: 1.2rem; color: #1a1a2e; margin-bottom: 10px; font-weight: 600;">Vision</h4>
+                <p style="color: #555; line-height: 1.8;">
+                  To be the most trusted and innovative technology partner, recognized globally for delivering exceptional value and transforming business landscapes through strategic digital solutions.
+                </p>
+              </div>
+              <div class="feature-box">
+                <h4>Our Core Values</h4>
+                <p>We operate with integrity, innovation, and customer-centricity at the forefront of everything we do. Excellence, collaboration, and continuous improvement drive our culture and define our relationships with clients and team members.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="company-profile-section">
+      <div class="container">
+        <div class="profile-header">
+          <h2>Our Service Offerings</h2>
+          <p>Olympica provides comprehensive IT and digital solutions designed to meet the unique needs of modern businesses</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Web Development</h4>
+              <p>Custom web applications and responsive websites that engage users and drive business results. From concept to deployment, we build scalable solutions tailored to your needs.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Mobile App Development</h4>
+              <p>Native and cross-platform mobile applications that deliver exceptional user experiences and empower on-the-go operations for your organization.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>CRM Solutions</h4>
+              <p>End-to-end CRM development ensuring seamless customer interactions, team coordination, and actionable insights—all in one unified platform.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Cloud Solutions</h4>
+              <p>Scalable, secure cloud infrastructure and migration services that enable flexibility, reduce costs, and enhance business continuity.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>AI & Machine Learning</h4>
+              <p>Intelligent automation and data analytics solutions that uncover insights, optimize processes, and drive strategic decision-making.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Consulting & Strategy</h4>
+              <p>Expert guidance on digital transformation, technology strategy, and process optimization to align technology with your business goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="company-profile-section" style="background: #f8f9fa;">
+      <div class="container">
+        <div class="content-section">
+          <div class="two-col-layout">
+            <div>
+              <h2 class="section-title">Why Choose Olympica?</h2>
+              <p style="color: #555; line-height: 1.8; margin-bottom: 30px;">
+                In a rapidly evolving digital landscape, choosing the right technology partner is crucial. Olympica stands out through:
+              </p>
+              <ul style="list-style: none; padding: 0; margin: 0;">
+                <li style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">Proven Expertise:</strong> Years of experience delivering successful projects across diverse industries and sectors.
+                </li>
+                <li style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">Customer-Centric Approach:</strong> We prioritize your success and work collaboratively to exceed expectations.
+                </li>
+                <li style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">Innovative Solutions:</strong> Leveraging latest technologies and best practices to solve complex business challenges.
+                </li>
+                <li style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">Dedicated Support:</strong> Comprehensive post-deployment support and continuous optimization for your solutions.
+                </li>
+                <li style="margin-bottom: 20px; color: #555; line-height: 1.6;">
+                  <strong style="color: #667eea;">Scalability & Growth:</strong> Solutions designed to grow with your business and adapt to changing market demands.
+                </li>
+              </ul>
+            </div>
+            <div class="section-image">
+              <img src="static/imgs/about/about-2.jpg" alt="Why Choose Us">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="company-profile-section">
+      <div class="container">
+        <div class="profile-header">
+          <h2>Our Team</h2>
+          <p>Our success is built on the talent, passion, and expertise of our diverse team of professionals. We bring together strategists, developers, designers, and consultants who are committed to delivering excellence on every project.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-card">
+              <img src="static/imgs/team/team-1.jpg" alt="Leadership">
+              <h4>Leadership</h4>
+              <p>Visionary leaders with decades of industry experience guiding our strategic direction and ensuring client success.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-card">
+              <img src="static/imgs/team/team-2.jpg" alt="Development Team">
+              <h4>Development Team</h4>
+              <p>Expert engineers and developers skilled in multiple technologies, frameworks, and programming languages.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-card">
+              <img src="static/imgs/team/team-3.jpg" alt="Support & QA">
+              <h4>Support & QA</h4>
+              <p>Dedicated professionals ensuring quality assurance, client support, and continuous improvement across all solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="company-profile-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 80px 0;">
+      <div class="container">
+        <div class="profile-header" style="margin-bottom: 60px;">
+          <h2 style="color: white; margin-bottom: 20px;">Our Track Record</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div style="text-align: center; padding: 40px 20px; color: white;">
+              <h3 style="font-size: 3rem; margin-bottom: 10px; font-weight: 700;">500+</h3>
+              <p style="font-size: 1.1rem; margin: 0;">Projects Completed</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div style="text-align: center; padding: 40px 20px; color: white;">
+              <h3 style="font-size: 3rem; margin-bottom: 10px; font-weight: 700;">200+</h3>
+              <p style="font-size: 1.1rem; margin: 0;">Happy Clients</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div style="text-align: center; padding: 40px 20px; color: white;">
+              <h3 style="font-size: 3rem; margin-bottom: 10px; font-weight: 700;">50+</h3>
+              <p style="font-size: 1.1rem; margin: 0;">Team Members</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div style="text-align: center; padding: 40px 20px; color: white;">
+              <h3 style="font-size: 3rem; margin-bottom: 10px; font-weight: 700;">10+</h3>
+              <p style="font-size: 1.1rem; margin: 0;">Years Experience</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="company-profile-section" style="background: #f8f9fa;">
+      <div class="container">
+        <div class="profile-header">
+          <h2>Industries We Serve</h2>
+          <p>We have deep expertise across diverse sectors, enabling us to deliver solutions tailored to industry-specific challenges and opportunities</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Healthcare & FinTech</h4>
+              <p>HIPAA-compliant platforms and secure transaction systems built with regulatory compliance and data security as top priorities.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>E-commerce & Retail</h4>
+              <p>High-conversion marketplaces with AR/VR features and seamless shopping experiences that drive customer engagement and sales.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Manufacturing & IoT</h4>
+              <p>Smart device networks and industrial automation solutions optimizing operations and enabling real-time monitoring.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="feature-box">
+              <h4>Education & SaaS</h4>
+              <p>Scalable platforms for online learning, data management, and business operations with seamless user experiences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section style="padding: 100px 0;">
+      <div class="container">
+        <div class="cta-section">
+          <h2>Ready to Transform Your Business?</h2>
+          <p>Let's work together to achieve your digital goals. Contact us today to discuss how Olympica can drive innovation and growth for your organization.</p>
+          <a href="contact.html" class="btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer style="background: #1a1a2e; color: white; padding: 50px 0 20px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <h5 style="margin-bottom: 20px; font-weight: 700;">About Olympica</h5>
+          <p style="line-height: 1.8; color: #ccc;">
+            Leading IT solutions and digital services company dedicated to transforming businesses through innovative technology.
+          </p>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 style="margin-bottom: 20px; font-weight: 700;">Quick Links</h5>
+          <ul style="list-style: none; padding: 0;">
+            <li style="margin-bottom: 10px;"><a href="index.html" style="color: #ccc; text-decoration: none;">Home</a></li>
+            <li style="margin-bottom: 10px;"><a href="company-profile.html" style="color: #ccc; text-decoration: none;">Company Profile</a></li>
+            <li style="margin-bottom: 10px;"><a href="services.html" style="color: #ccc; text-decoration: none;">Services</a></li>
+            <li style="margin-bottom: 10px;"><a href="contact.html" style="color: #ccc; text-decoration: none;">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <h5 style="margin-bottom: 20px; font-weight: 700;">Contact Info</h5>
+          <p style="color: #ccc; margin-bottom: 10px;"><strong>Email:</strong> info@olympica.com</p>
+          <p style="color: #ccc; margin-bottom: 10px;"><strong>Phone:</strong> +1 (555) 123-4567</p>
+          <p style="color: #ccc;"><strong>Address:</strong> 123 Tech Street, Silicon Valley, CA 94000</p>
+        </div>
+      </div>
+      <hr style="border-color: #333; margin: 30px 0;">
+      <div style="text-align: center; color: #999;">
+        <p style="margin: 0;">&copy; 2026 Olympica. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="static/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery -->
+  <script src="static/js/jquery-3.6.1.min.js"></script>
+  <!-- AOS JS -->
+  <script src="static/js/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="static/js/swiper-bundle.min.js"></script>
+
+</body>
+
+</html></body>
+
+</html>
